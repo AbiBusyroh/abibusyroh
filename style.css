@@ -1,0 +1,79 @@
+/* UKURAN BESAR */
+*,
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color:maroon;
+}
+
+.container-navbar {
+    height: 100px;
+    display: flex ;
+    justify-content: space-between;
+    background-color: rgb(158, 0, 0);
+    
+}
+
+.container-logo-navbar {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    color: white;
+    font-family: 'teko';
+    font-size: 35px;
+}
+
+.ul-navbar :hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+.ul-navbar {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    list-style-type: none;
+}
+
+.li-navbar {
+    margin: 40px;
+    font-family: 'teko';
+    font-size: 20px;
+}
+
+div ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* UKURAN SEDANG */
+
+@media only screen and (max-width: 768px) {
+    .ul-navbar {
+        flex-direction: column;
+        margin-top: 100px;
+        align-items: center;
+    }
+
+    .menu-icon {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        margin: 25px;
+    }
+}
